@@ -1,7 +1,26 @@
+.
 .App {
-  text-align: center;
+  @apply cursor-auto ; 
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link {
+  @apply text-center grid-flow-row hover:bg-indigo-600 rounded text-white h-8 w-36 ; 
+} 
+.form-items{
+  @apply rounded bg-blue-400;
+}
+
+.form{
+  @apply flex flex-col items-center  mx-48 rounded;
+}
+
+@layer base {
+  .{
+    @apply bg-indigo-400;
+  }
+  
+}
